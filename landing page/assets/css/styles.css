@@ -282,10 +282,6 @@ header nav .logo{
   margin-bottom: var(--mb-1);
 }
 
-.home__data .text__wrapper{
-  margin-bottom: var(--mb-5);
-}
-
 .box{
   color: var(--green);
   font-size: var(--h1-font-size);
@@ -370,6 +366,7 @@ header nav .logo{
   letter-spacing: .8px;
   line-height: 20px;
   margin: 0;
+  margin-top: 2rem;
   outline: none;
   overflow: visible;
   padding: 13px 19px;
