@@ -293,13 +293,13 @@ header nav .logo{
 }
 
 .b1{
-  animation: ani1 5s infinite;
+  animation: ani1 10s infinite;
 }
 .b2{
-  animation: ani2 5s infinite;
+  animation: ani2 10s infinite;
 }
 .b3{
-  animation: ani3 5s infinite;
+  animation: ani3 10s infinite;
 }
 
 @keyframes ani1{
@@ -347,9 +347,6 @@ header nav .logo{
   /*justify-self: center;*/
 }
 
-.btn-container{
-  margin-top: 1.5rem;
-}
 
 .button {
   appearance: button;
