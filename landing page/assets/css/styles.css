@@ -291,13 +291,13 @@ header nav .logo{
 }
 
 .b1{
-  animation: ani1 15s infinite;
+  animation: ani1 5s infinite;
 }
 .b2{
-  animation: ani2 15s infinite;
+  animation: ani2 5s infinite;
 }
 .b3{
-  animation: ani3 15s infinite;
+  animation: ani3 5s infinite;
 }
 
 @keyframes ani1{
