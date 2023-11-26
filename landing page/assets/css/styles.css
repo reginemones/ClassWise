@@ -224,7 +224,7 @@ header nav .logo{
   align-content: center;
 }
 
-.wrapper {
+/* .wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -273,7 +273,9 @@ header nav .logo{
   100%{
     left: 0;
   }
-}
+} */
+
+
 
 .home__subtitle{
   font-size: 1.3rem;
