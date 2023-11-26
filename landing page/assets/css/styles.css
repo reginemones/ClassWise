@@ -351,6 +351,10 @@ header nav .logo{
   /*justify-self: center;*/
 }
 
+.btn-container{
+  margin-top: 1.5rem;
+}
+
 .button {
   appearance: button;
   background-color: var(--drop-shadow);
