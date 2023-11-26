@@ -274,7 +274,11 @@ header nav .logo{
     left: 0;
   }
 } */
-
+.home__data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .home__data .static-txt{
   color: var(--green);
   font-size: var(--h1-font-size);
@@ -282,12 +286,12 @@ header nav .logo{
 }
 
 .box{
+  color: var(--green);
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
   position: absolute;
   opacity: 0;
   width: 100%;
-  letter-spacing: 2px;
 }
 
 .b1{
