@@ -282,6 +282,9 @@ header nav .logo{
   margin-bottom: var(--mb-1);
 }
 
+.text__wrapper{
+  margin-bottom: var(--mb-4);
+}
 .box{
   color: var(--green);
   font-size: var(--h1-font-size);
