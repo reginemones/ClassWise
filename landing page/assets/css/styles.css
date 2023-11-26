@@ -284,6 +284,7 @@ header nav .logo{
 .box{
   font-size: var(--h1-font-size);
   font-weight: var(--font-medium);
+  position: absolute;
   opacity: 0;
   width: 100%;
   letter-spacing: 2px;
@@ -298,8 +299,39 @@ header nav .logo{
 .b3{
   animation: ani3 15s infinite;
 }
-.b4{
-  animation: ani4 15s infinite;
+
+@keyframes ani1{
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 0;
+  }
+}
+@keyframes ani2{
+  30%{
+    opacity: 0;
+  }
+  45%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 0;
+  }
+}
+@keyframes ani3{
+  60%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 .home__subtitle{
