@@ -281,6 +281,27 @@ header nav .logo{
   font-weight: var(--font-medium);
 }
 
+.box{
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-medium);
+  opacity: 0;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.b1{
+  animation: ani1 15s infinite;
+}
+.b2{
+  animation: ani2 15s infinite;
+}
+.b3{
+  animation: ani3 15s infinite;
+}
+.b4{
+  animation: ani4 15s infinite;
+}
+
 .home__subtitle{
   font-size: 1.3rem;
   color: var(--green);
