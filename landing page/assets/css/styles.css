@@ -276,6 +276,7 @@ header nav .logo{
 } */
 .home__data{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .home__data .static-txt{
@@ -291,6 +292,7 @@ header nav .logo{
   position: absolute;
   opacity: 0;
   width: 100%;
+  margin-bottom: var(--mb-4);
 }
 
 .b1{
