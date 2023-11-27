@@ -427,7 +427,13 @@ header nav .logo{
   margin-bottom: 4rem;
 }
 .about__img{
-  /*width: 300px;*/
+  /* width: 450px; */
+  border-radius: .5rem;
+  box-shadow: 0 2px 20px rgba(3,74,40,.15);
+  justify-self: center;
+}
+.about__video{
+  width: 450px;
   border-radius: .5rem;
   box-shadow: 0 2px 20px rgba(3,74,40,.15);
   justify-self: center;
