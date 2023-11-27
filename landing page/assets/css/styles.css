@@ -197,6 +197,7 @@ header nav .logo{
   align-items: center;
   padding: .3rem;
   background: rgba(6,156,84,.5);
+  color: var(--secondary-color);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -209,7 +210,7 @@ header nav .logo{
 
 .scrolltop__icon{
   font-size: 1.8rem;
-  color: var(--secondary-color);
+  color: var(--body-color);
 }
 
 .show-scroll{
