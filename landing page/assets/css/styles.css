@@ -209,7 +209,7 @@ header nav .logo{
 
 .scrolltop__icon{
   font-size: 1.8rem;
-  color: var(--body-color);
+  color: var(--secondary-color);
 }
 
 .show-scroll{
