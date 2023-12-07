@@ -1,4 +1,3 @@
-/*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -12,8 +11,6 @@ const showMenu = (toggleId, navId) =>{
     }
 }
 showMenu('nav-toggle','nav-menu')
-
-/*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -23,7 +20,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -43,25 +39,14 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    
     if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*==================== SHOW SCROLL TOP ====================*/ 
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
-}
-window.addEventListener('scroll', scrollTop)
 
-
-
-/*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -77,16 +62,3 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
-
-/* for faqs */
-const buttons = document.querySelectorAll('button');
-
-buttons.forEach( button =>{
-    button.addEventListener('click',()=>{
-        const faq = button.nextElementSibling;
-        const icon = button.children[1];
-
-        faq.classList.toggle('show');
-        icon.classList.toggle('rotate');
-    })
-} )

@@ -3,14 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/styles.css">
         <link rel="icon" href="logo.svg" type="image/x-icon">
     </head>
     <body>
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon'></i>
-        </a>
         <header class="l-header" id="header">
             <nav class="nav bd-container">
                 <img class="logo" src="assets/img/logo.svg">
@@ -20,7 +18,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="https://classwise.vercel.app/faqs" class="nav__link">Faqs</a></li>
+                        <li class="nav__item"><a href="#faqs" class="nav__link">Faqs</a></li>
                     </ul>
                 </div>
                 <div class="nav__toggle" id="nav-toggle">
@@ -89,84 +87,137 @@
                         <h2 class="section-title about__initial">Your hard work deserves recognition <br>- earn bonuses and awards in our ClassWise!</h2>
                         <p class="about__description">ClassWise offers bonuses and awards to students for their effort. It is the idea like in the real world, people who work hard deserves to be awarded and granted of bonus!</p>
                     </div>
-                    <video class="about__img" src="assets/img/ClassWise.mp4" type="video/x-matroska;" autoplay></video>
+                    <video class="about__img" src="assets/img/send-bonus.mp4" type="video/x-matroska;" autoplay></video>
                 </div>
                 <div class="about__container bd-grid">
                     <div class="about__data">
                         <h2 class="section-title about__initial">Understanding taxes, loans, investments, and rents made easy with ClassWise!</h2>
                         <p class="about__description">ClassWise provides knowledge about how the process of taxes, loans, investments, and rents works virtually. It aims to provides financial education in an experiential way. </p>
                     </div>
-                    <video class="about__video" src="assets/img/Virtual Bank.mp4" type="video/x-matroska;" autoplay></video>
+                    <video class="about__video" src="assets/img/taxes.mp4" type="video/x-matroska;" autoplay></video>
                 </div>
                 <div class="about__container bd-grid">
                     <div class="about__data">
                         <h2 class="section-title about__initial">Come and join us as we discover what the virtual world of economy looks like!</h2>
                         <p class="about__description">Experience the power of learning with us! It's ClassWise!</p>
                     </div>
-                    <video class="about__img" src="assets/img/Economy.mp4" type="video/x-matroska;" autoplay></video>
+                    <video class="about__img" src="assets/img/Classwise.mp4" type="video/x-matroska;" autoplay></video>
                 </div>
             </section>
-            <!-- <section class="faqs section bd-container" id="faqs">
+            <section class="faqs section bd-container" id="faqs">
                 <h2 class="section-title">FAQS</h2>
                 <span class="section-subtitle">Answers to your most frequently asked questions. </span>
 
-                <div class="questions-container">
-                    <div class="question">
-                        <button>
-                            <span>How to change President?</span>
-                            <i class="bx bx-chevron-down d-arrow"></i>
+                <div class="accordion" id="">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          How to Change President?
                         </button>
-                        <p>It is not impossible for a scenario where the class have to elect a new president due to some unfortunate circumstances. To change the current president of the class inside the app,<br><br>
-                            Step 1. Contact the administrator of the classwise app.<br>
-                            Step 2. On the admin side of the application, click the button encircled in red to open the student list.<br>
-                            Step 3. Hit the change president button and select from the dropdown.</p>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          It is not impossible for a scenario where the class have to elect a new president due to some unfortunate circumstances. To change the current president of the class inside the app,<br>
+                          <br><b>Step 1.</b> Contact the administrator of the ClassWise app.
+                          <br>
+                          <b>Step 2.</b> On the admin side of the application, click the button encircled in red to open the student list.
+                          <br>
+                          <b>Step 3.</b> Hit the change president button and select from the dropdown.
+                          <br>
+                          That's it!
+                        </div>
+                      </div>
                     </div>
-            
-                    <div class="question">
-                        <button>
-                            <span>Are there guidelines for giving bonuses?</span>
-                            <i class="bx bx-chevron-down d-arrow"></i>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button accordion-icon-active-color collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Why can't I bid on an Item in the Auction?
                         </button>
-                        <p><b>What bonuses can be given.</b> The application already has predefined bonuses, and you can either send a custom bonus on the go or add a custom bonus in the class settings to meet the specific needs of the class.<br><br>
-                            To send a custom bonus on the go,
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            There are three main reasons why you can't place a bid on an item.<br><br>
+                            <b>You have pending transactions.</b> Students must first clear their financial responsibilities before joining the auction event, so you must process all of your pending transactions in your dashboard.<br>
+                            To process a pending transaction,
                             <br>
-                            Step 1. Go to students page.<br>
-                            Step 2. Select a student and hit the send bonuses button.<br>
-                            Step 3. You can now send a custom bonus by filling in the required fields under the "Other" section of the pop-up.<br>
-                            That's it!<br>
-                            To define a new bonus,<br>
-                            Step 1. Go to class settings<br>
-                            Step 2. Open the bonuses, then hit the add new bonus button<br>
-                            Step 3. You can now add a new bonus by filling in the required fields. The new bonus will now appear in the selection when making a bonus transaction.
-                        </p>
+                            <b>Step 1.</b> Go to your dashboard.
+                            <br>
+                            <b>Step 2.</b> Open pending transactions and hit the right headed arrow for each item then confirm.
+                            <br>
+                            That's it!
+                            <br><br>
+                            <b>You cannot bid two consecutive times. </b>A skilled bidder knows how to be patient. Do not rush and let someone outbid you before bidding again.<br><br>
+                            <b>Your bid must be 20% higher.</b> The bidding mechanics require the students to bid 20% higher than the last bid, meaning if the last bid is 150 wisecoins, the next bid must be atleast 180 wisecoins.
+                        </div>
+                      </div>
                     </div>
-            
-                    <div class="question">
-                        <button>
-                            <span>How to bid in an auction item?</span>
-                            <i class="bx bx-chevron-down d-arrow"></i>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          I forgot my password
                         </button>
-                        <p>To bid in an auction item, click on your chosen item and enter the amount you want to bid. If you are the top bidder, your name will be shown at the lower part of the item and the amount you bid. </p>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Forgetting your password is a normal thing. However, there is no way for students to reset their password on their own. You will need to contact the administrator and request to reset your password for you.<br><br>
+                            Step 1. Contact the administrator of the classwise app.
+                            <br>
+                            Step 2. Go to admin side of the application.
+                            <br>
+                            Step 3. On the dashboard, find or search the class of the student then click the encircled button as shown below.
+                            <br>
+                            Step 4. Find the student's name on the list then in the actions column you will find the settings button to reset the student's password.
+                            <br>
+                            That's it!
+                        </div>
+                      </div>
                     </div>
-            
-                    <div class="question">
-                        <button>
-                            <span>How can I apply for a job?</span>
-                            <i class="bx bx-chevron-down d-arrow"></i>
-                        </button>
-                        <p>On the jobs menu, you can apply to your chosen job. You have to write a description that will describe your strength and why you are deserving to get the job. The President will be the one incharge of accepting and rejecting applications of the applicants. </p>
-                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Why do I have (2) two transaction history on my dashboard?
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            On the dashboard of every student, there 2 different transaction histories.<br><br>
+                            <b>Personal transaction history.</b> Students may want to track their personal transactions so that they know where their money went and came from.
+                            <br>
+                            To view your personal transaction history,
+                            <br>
+                            Step 1. Go to your dashboard.
+                            <br>
+                            Step 2. Under My Activity, open transaction history.
+                            <br>
+                            That's it!
+                            <br><br>
+                            <b>Class transaction history.</b> A transaction history for the class is a must to provide transparency and ensure fairness.
+                            <br>
+                            To view the class transaction history,
+                            <br>
+                            Step 1. Go to your dashboard.
+                            <br>
+                            Step 2. Under Class, open class transaction history.
+                            <br>
+                            That's it!
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Will our balance be carried over to the next school year?
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Unfortunately, no. Everything starts fresh at the beginning of each year. New classes and accounts need to be created to start a new class economy.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
 
-                    <div class="question">
-                        <button>
-                            <span>What date of the month do we receive our salaries?</span>
-                            <i class="bx bx-chevron-down d-arrow"></i>
-                        </button>
-                        <p>Each student can receive their salary at the end of the month. You can check claim your salary on the dashboard.</p>
-                    </div>
-                </div>
-
-            </section> -->
+            </section>
         </main>
         <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
@@ -195,9 +246,9 @@
                 </div>
 
                 <div class="footer__content">
-                    <h3 class="footer__title">Address</h3>
+                    <h3 class="footer__title">School</h3>
                     <ul>
-                        <li>Pamantasan Ng Lungsod Ng Valenzuela</li>
+                        <li>Talipapa High School</li>
                     </ul>
                 </div>
             </div>
@@ -207,5 +258,6 @@
 
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

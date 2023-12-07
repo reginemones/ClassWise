@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
 
-/*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
-
-  /*========== Colors ==========*/
   --primary-color: #29A490;
   --secondary-color: #DFF1ED;
   --tertiary-color: #242A2B;
@@ -13,8 +10,6 @@
   --highlight: #FFAE33;
   --white: #fff;
   --drop-shadow: #2C767B;
-
-  /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -23,12 +18,9 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-
-  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
   --mb-1: .5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -36,7 +28,6 @@
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -53,7 +44,6 @@
   }
 }
 
-/*========== BASE ==========*/
 *,::before,::after{
   box-sizing: border-box;
 }
@@ -92,7 +82,6 @@ header nav .logo{
   width: 10rem;
 }
 
-/*========== CLASS CSS ==========*/
 
 .section{
   padding: 4rem 0 2rem;
@@ -115,7 +104,6 @@ header nav .logo{
   margin-bottom: var(--mb-1);
 }
 
-/*========== LAYOUT ==========*/
 .bd-container{
   max-width: 960px;
   width: calc(100% - 2rem);
@@ -189,30 +177,7 @@ header nav .logo{
 .scroll-header{
   box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
-.scrolltop{
-  position: fixed;
-  right: 1rem;
-  bottom: -20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: .3rem;
-  background: rgba(6,156,84,.5);
-  color: var(--secondary-color);
-  border-radius: .4rem;
-  z-index: var(--z-tooltip);
-  transition: .4s;
-  visibility: hidden;
-}
 
-.scrolltop:hover{
-  background-color: var(--first-color-alt);
-}
-
-.scrolltop__icon{
-  font-size: 1.8rem;
-  color: var(--body-color);
-}
 
 .show-scroll{
   visibility: visible;
@@ -221,65 +186,15 @@ header nav .logo{
 .home{
   display: flex;
   background: url(../img/ths-bg.png);
-  background-size: cover; /* Adjust based on your needs */
-  background-position: center; /* Adjust based on your needs */
-  background-repeat: no-repeat; /* Adjust based on your needs */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 .home__container{
   height: calc(100vh - var(--header-height));
   align-content: center;
 }
 
-/* .wrapper {
-  display: flex;
-  flex-direction: column;
-}
-.wrapper .static-txt{
-  color: var(--green);
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-medium);
-}
-
-.wrapper .dynamic-txts{
-  line-height: 90px;
-  height: 90px;
-  overflow: hidden;
-}
-.dynamic-txts li{
-  color: var(--primary-color);
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-medium);
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
-}
-
-@keyframes slide{
-  100%{
-    top: -360px;
-  }
-}
-
-.dynamic-txts li::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--white);
-  border-left: 2px solid var(--primary-color);
-  animation: typing 3s steps(17) infinite;
-}
-
-@keyframes typing{
-  40%,
-  60%{
-    left: calc(100% + 80px);
-  }
-  100%{
-    left: 0;
-  }
-} */
 
 .home__data .static-txt{
   color: var(--green);
@@ -420,7 +335,7 @@ header nav .logo{
   padding-bottom: 10px;
  }
 
-/*========== ABOUT ==========*/
+
 .about__data{
   text-align: center;
 }
@@ -433,20 +348,21 @@ header nav .logo{
   margin-bottom: 4rem;
 }
 .about__img{
-  /* width: 450px; */
+  width: auto;
+  height: auto;
   border-radius: .5rem;
   box-shadow: 0 2px 20px rgba(3,74,40,.15);
   justify-self: center;
 }
 .about__video{
-  width: 450px;
+  width: auto;
+  height: 250px;
   border-radius: .5rem;
   box-shadow: 0 2px 20px rgba(3,74,40,.15);
   justify-self: center;
 }
 
 
-/*========== FEATURES ==========*/
 .features__container{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -482,73 +398,17 @@ header nav .logo{
   margin-bottom: var(--mb-1);
 }
 
-/*========== FAQS ==========*/
 
-.faqs__content{
-  text-align: center;
+/* Add a custom style for the active accordion button */
+.accordion-button:not(.collapsed) {
+  background-color: var(--green); 
+  color: #fff !important;
 }
-/*
-.faqs-con{
-  width: 100%;
-  max-width: 40rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}*/
-.faqs__title{
-  font-size: var(--h3-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-1);
+.accordion-button:not(.collapsed)::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.questions-container{
-  max-width: 800px;
-  margin: 0 auto;
-}
 
-.question{
-  border-radius: .4rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(3,74,40,.15);
-}
-.question button{
-  width: 100%;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 15px;
-  border:none;
-  outline: none;
-  font-size: 18px;
-  color: var(--green);
-  font-weight: var(--font-semi-bold);
-  cursor: pointer;
-}
-.question p{
-  font-size: 1rem;
-  color: var(--tertiary-color);
-  max-height: 0;
-  opacity: 0;
-  line-height: 1.5;
-  overflow: hidden;
-  transition: all 0.6s ease;
-  
-}
-.d-arrow{
-  transition: transform 0.5s ease-in ;
-  color: var(--green);
-}
-
-.question p.show{
-  max-height: 200px; 
-  opacity: 1;
-  padding:0px 15px 30px 15px;
-}
-.question button .d-arrow.rotate{
-  transform: rotate(180deg);
-}
-
-/*========== FOOTER ==========*/
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
@@ -585,7 +445,6 @@ header nav .logo{
   margin-top: 3.5rem;
 }
 
-/*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 320px) and (max-width: 640px){
   .wrapper{
     margin-top: 1.3rem;
