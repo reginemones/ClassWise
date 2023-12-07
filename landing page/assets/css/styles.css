@@ -93,6 +93,7 @@ header nav .logo{
 }
 
 /*========== CLASS CSS ==========*/
+
 .section{
   padding: 4rem 0 2rem;
 }
@@ -219,7 +220,10 @@ header nav .logo{
 }
 .home{
   display: flex;
-  /*background: url(../img/bg.svg);*/
+  background: url(../img/ths-bg.png);
+  background-size: cover; /* Adjust based on your needs */
+  background-position: center; /* Adjust based on your needs */
+  background-repeat: no-repeat; /* Adjust based on your needs */
 }
 .home__container{
   height: calc(100vh - var(--header-height));
@@ -346,6 +350,7 @@ header nav .logo{
 
 .home__img{
   width: 400px;
+  margin-top: 20px;
   /*justify-self: center;*/
 }
 
